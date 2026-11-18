@@ -7,7 +7,7 @@ license = "GPL-3.0-or-later"
 authors = [{ name = "Matteo Redaelli", email = "matteo.redaelli@gmail.com" }]
 requires-python = ">=3.14"
 keywords = ["mcp", "atm", "milano", "transit"]
-classifiers = ["License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)", "Programming Language :: Python :: 3.14"]
+classifiers = ["Programming Language :: Python :: 3.14"]
 dependencies = ["atm-milano>=0.1.0,<0.2", "fastmcp>=2.12"]
 
 [project.scripts]

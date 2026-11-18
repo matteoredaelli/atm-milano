@@ -7,7 +7,7 @@ license = "GPL-3.0-or-later"
 authors = [{ name = "Matteo Redaelli", email = "matteo.redaelli@gmail.com" }]
 requires-python = ">=3.14"
 keywords = ["atm", "milano", "transit", "public-transport", "gtfs"]
-classifiers = ["License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)", "Programming Language :: Python :: 3.14", "Typing :: Typed"]
+classifiers = ["Programming Language :: Python :: 3.14", "Typing :: Typed"]
 dependencies = ["curl-cffi>=0.13", "pydantic>=2.10"]
 
 [project.urls]
