@@ -9,3 +9,6 @@ check: lint typecheck test
 build:       ; rm -rf dist && uv build --all-packages
 mcp:         ; uv run atm-milano-mcp
 clean:       ; rm -rf dist .pytest_cache .ruff_cache .venv; find . -name __pycache__ -prune -exec rm -rf {} +
+
+.PHONY: license
+license:     ; addlicense -f scripts/license-header.tmpl -c "Matteo Redaelli" -y 2026 -ignore '.venv/**' -ignore 'dist/**' -ignore '**/fixtures/**' -ignore '**/*.md' -ignore '**/*.json' -ignore '**/*.toml' -ignore '**/*.yml' -ignore 'uv.lock' -ignore '.python-version' -ignore 'LICENSE' .
