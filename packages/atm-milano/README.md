@@ -28,13 +28,15 @@ import asyncio
 from datetime import datetime
 from atm_milano import AtmClient, TransportMode
 
+
 async def main():
     async with AtmClient(lang="en") as c:
         places = await c.search_places("Cadorna")
         print(places.places[0].name, places.places[0].code)
 
         plan = await c.plan_trip(
-            "Cadorna", "Stazione Centrale",
+            "Cadorna",
+            "Stazione Centrale",
             when=datetime(2026, 11, 20, 9, 30),
             modes=[TransportMode.METRO],
         )
@@ -44,13 +46,14 @@ async def main():
         route = await c.get_line_route("M1", direction=0)
         print(route.description, len(route.stops), "stops")
 
-        stop = await c.get_stop_lines("-51")          # Cadorna M1
+        stop = await c.get_stop_lines("-51")  # Cadorna M1
         print([(a.line_code, a.wait) for a in stop.arrivals])
 
         tt = await c.get_stop_timetable("12254", "1")  # tram 1 at Greco Rovereto
         print(tt.schedules[0].day_type)
 
         print(len(await c.list_metro_stations("M2")), "M2 stations")
+
 
 asyncio.run(main())
 ```
