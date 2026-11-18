@@ -80,7 +80,7 @@ class AtmClient:
         self.timeout = timeout
         self.retries = retries
         self._owns_session = session is None
-        self._session: HttpSession = session or cffi.AsyncSession(  # ty: ignore[invalid-assignment]
+        self._session: HttpSession = session or cffi.AsyncSession(  # pyright: ignore[reportAttributeAccessIssue]
             impersonate="chrome",
             headers={"Referer": f"{BASE}/", "Accept": "application/json, text/plain, */*"},
         )
@@ -183,8 +183,14 @@ class AtmClient:
         """Turn a text query / Place / (lat, lng) into a Place with coordinates."""
         if isinstance(ref, tuple):
             lat, lng = ref
-            return Place(
-                id=0, kind=PlaceKind.ADDRESS, name=f"{lat:.5f},{lng:.5f}", lat=lat, lng=lng
+            return Place.model_validate(
+                {
+                    "id": 0,
+                    "kind": PlaceKind.ADDRESS,
+                    "name": f"{lat:.5f},{lng:.5f}",
+                    "lat": lat,
+                    "lng": lng,
+                }
             )
         if isinstance(ref, Place):
             return await self.geocode(ref)

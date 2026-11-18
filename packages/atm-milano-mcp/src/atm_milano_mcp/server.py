@@ -19,7 +19,7 @@
 
 from __future__ import annotations
 
-from collections.abc import AsyncGenerator
+from collections.abc import AsyncGenerator, Awaitable
 from contextlib import asynccontextmanager
 from datetime import datetime
 from typing import Annotated
@@ -82,7 +82,7 @@ def _ref(value: str) -> str | tuple[float, float]:
     return value
 
 
-async def _run[T](coro) -> T:
+async def _run[T](coro: Awaitable[T]) -> T:
     try:
         return await coro
     except AtmError as e:

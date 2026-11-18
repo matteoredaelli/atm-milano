@@ -22,7 +22,7 @@ dev = [
     "pytest>=8",
     "pytest-asyncio>=1.0",
     "ruff>=0.9",
-    "ty>=0.0.1a1",
+    "pyright>=1.1.400",
 ]
 
 [tool.ruff]
@@ -38,3 +38,8 @@ asyncio_default_fixture_loop_scope = "function"
 testpaths = ["packages"]
 addopts = "-m 'not live'"
 markers = ["live: hits the real ATM/Comune di Milano services (network)"]
+
+[tool.pyright]
+pythonVersion = "3.14"
+include = ["packages"]
+exclude = ["**/_version.py", "**/.venv"]
