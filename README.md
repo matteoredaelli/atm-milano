@@ -12,3 +12,5 @@ Unofficial Python tools for Milan public transport (ATM / GiroMilano).
 Dev: `make sync`, `make check`, `make build`. Release: tag `atm-milano-vX.Y.Z` / `atm-milano-mcp-vX.Y.Z`.
 
 Not affiliated with ATM; uses undocumented endpoints that may change.
+
+License: GPL-3.0-or-later.
