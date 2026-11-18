@@ -2,8 +2,11 @@
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "io.github.matteoredaelli/atm-milano-mcp",
   "title": "ATM Milano",
-  "description": "Milan public transport: trip planning, lines, stops, live waits and metro stations.",
-  "repository": { "url": "https://github.com/matteoredaelli/atm-milano", "source": "github" },
+  "description": "Milan public transport (ATM): trip planning, lines, stops, live waits and metro stations.",
+  "repository": {
+    "url": "https://github.com/matteoredaelli/atm-milano",
+    "source": "github"
+  },
   "version": "0.1.1",
   "packages": [
     {
@@ -11,7 +14,9 @@
       "identifier": "atm-milano-mcp",
       "version": "0.1.1",
       "runtimeHint": "uvx",
-      "transport": { "type": "stdio" }
+      "transport": {
+        "type": "stdio"
+      }
     }
   ]
 }
