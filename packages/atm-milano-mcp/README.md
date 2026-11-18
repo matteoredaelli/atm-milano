@@ -1,5 +1,7 @@
 # atm-milano-mcp
 
+<!-- mcp-name: io.github.matteoredaelli/atm-milano-mcp -->
+
 MCP server for Milan public transport, built on [`atm-milano`](https://pypi.org/project/atm-milano/).
 
 ```json
