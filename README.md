@@ -9,6 +9,8 @@ Unofficial Python tools for Milan public transport (ATM / GiroMilano).
 { "mcpServers": { "atm-milano": { "command": "uvx", "args": ["atm-milano-mcp"] } } }
 ```
 
+`uvx` caches the version; upgrade with `uvx --upgrade atm-milano-mcp --help` or use `atm-milano-mcp@latest` in `args`.
+
 Dev: `make sync`, `make check`, `make build`. Release: tag `vX.Y.Z` (version comes from the tag, both packages).
 
 Not affiliated with ATM; uses undocumented endpoints that may change.
