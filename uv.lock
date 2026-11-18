@@ -49,7 +49,6 @@ wheels = [
 
 [[package]]
 name = "atm-milano"
-version = "0.1.0"
 source = { editable = "packages/atm-milano" }
 dependencies = [
     { name = "curl-cffi" },
@@ -64,7 +63,6 @@ requires-dist = [
 
 [[package]]
 name = "atm-milano-mcp"
-version = "0.1.0"
 source = { editable = "packages/atm-milano-mcp" }
 dependencies = [
     { name = "atm-milano" },

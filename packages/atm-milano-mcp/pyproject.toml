@@ -1,6 +1,10 @@
+[build-system]
+requires = ["hatchling>=1.27", "hatch-vcs"]
+build-backend = "hatchling.build"
+
 [project]
 name = "atm-milano-mcp"
-version = "0.1.0"
+dynamic = ["version"]
 description = "MCP server exposing ATM Milano journey planning, lines, stops and metro data"
 readme = "README.md"
 license = "GPL-3.0-or-later"
@@ -8,7 +12,7 @@ authors = [{ name = "Matteo Redaelli", email = "matteo.redaelli@gmail.com" }]
 requires-python = ">=3.14"
 keywords = ["mcp", "atm", "milano", "transit"]
 classifiers = ["Programming Language :: Python :: 3.14"]
-dependencies = ["atm-milano>=0.1.0,<0.2", "fastmcp>=2.12"]
+dependencies = ["atm-milano>=0.1.0", "fastmcp>=2.12"]
 
 [project.scripts]
 atm-milano-mcp = "atm_milano_mcp.server:main"
@@ -16,6 +20,13 @@ atm-milano-mcp = "atm_milano_mcp.server:main"
 [project.urls]
 Repository = "https://github.com/matteoredaelli/atm-milano"
 
-[build-system]
-requires = ["uv_build>=0.9,<0.14"]
-build-backend = "uv_build"
+# Version comes from the git tag (v0.1.0 -> 0.1.0); repo root is two levels up.
+[tool.hatch.version]
+source = "vcs"
+raw-options = { root = "../..", local_scheme = "no-local-version" }
+
+[tool.hatch.build.hooks.vcs]
+version-file = "src/atm_milano_mcp/_version.py"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/atm_milano_mcp"]

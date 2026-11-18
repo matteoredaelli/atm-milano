@@ -1,6 +1,10 @@
+[build-system]
+requires = ["hatchling>=1.27", "hatch-vcs"]
+build-backend = "hatchling.build"
+
 [project]
 name = "atm-milano"
-version = "0.1.0"
+dynamic = ["version"]
 description = "Async Python client for ATM Milano (GiroMilano) journey planner, line, stop and metro data"
 readme = "README.md"
 license = "GPL-3.0-or-later"
@@ -13,6 +17,13 @@ dependencies = ["curl-cffi>=0.13", "pydantic>=2.10"]
 [project.urls]
 Repository = "https://github.com/matteoredaelli/atm-milano"
 
-[build-system]
-requires = ["uv_build>=0.9,<0.14"]
-build-backend = "uv_build"
+# Version comes from the git tag (v0.1.0 -> 0.1.0); repo root is two levels up.
+[tool.hatch.version]
+source = "vcs"
+raw-options = { root = "../..", local_scheme = "no-local-version" }
+
+[tool.hatch.build.hooks.vcs]
+version-file = "src/atm_milano/_version.py"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/atm_milano"]
