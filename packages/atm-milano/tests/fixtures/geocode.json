@@ -1,0 +1,31 @@
+{
+ "ExtensionData": {},
+ "geowarning": 0,
+ "enginestatus": 0,
+ "candidate_municipality": null,
+ "candidate_address": null,
+ "geocodeditem": {
+  "ExtensionData": {},
+  "place": "Milano",
+  "municipality": "Milano",
+  "district": "mi",
+  "region": "lombardia",
+  "address": "Piazza Del Duomo",
+  "house_number": "1",
+  "posx": 514780,
+  "posy": 5034572,
+  "lat": 45.46451843148593,
+  "lon": 9.189060933555822,
+  "p_posx": 514706,
+  "p_posy": 5034471,
+  "p_lat": 45.46361087873062,
+  "p_lon": 9.188111331337028,
+  "address_zip_code": "20123",
+  "zip_code": "20123",
+  "i_region": "03",
+  "i_district": "015",
+  "i_municipality": "015146"
+ },
+ "error_message": null,
+ "house_number_detected_on_address_warning": null
+}

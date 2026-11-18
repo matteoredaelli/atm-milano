@@ -1,0 +1,50 @@
+{
+ "StopPoint": {
+  "OperatorCode": null,
+  "Code": "12254",
+  "Description": "Greco Rovereto",
+  "Location": {
+   "X": 9.216219268583316,
+   "Y": 45.49504722248345
+  },
+  "PointType": 1,
+  "OtherLines": [],
+  "StopType": null,
+  "Links": []
+ },
+ "Lines": [
+  {
+   "Line": {
+    "LineId": "1",
+    "OperatorCode": "",
+    "LineCode": "1",
+    "LineDescription": "Greco - Roserio (Ospedale Sacco)",
+    "TransportMode": 0,
+    "Suburban": false,
+    "OtherRoutesAvailable": false,
+    "Radiobus": false,
+    "RadiobusCapolinea": false
+   },
+   "Direction": "0",
+   "BookletUrl": "https://orari.atm.it/1_12254.pdf",
+   "BookletUrl2": "1",
+   "WaitMessage": "5 min",
+   "JourneyPatternId": "1|0",
+   "TrafficBulletins": [],
+   "Links": [
+    {
+     "Rel": "timetable",
+     "Href": "tpl/stops/12254/timetable/line/1/dir/0",
+     "Title": null
+    }
+   ]
+  }
+ ],
+ "Links": [
+  {
+   "Rel": "linesummary",
+   "Href": "tpl/stops/12254/linesummary",
+   "Title": null
+  }
+ ]
+}

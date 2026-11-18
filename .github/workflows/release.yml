@@ -1,0 +1,28 @@
+name: Release
+# Tags: atm-milano-vX.Y.Z  or  atm-milano-mcp-vX.Y.Z  (independent versions)
+on:
+  push:
+    tags: ["atm-milano-v*", "atm-milano-mcp-v*"]
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    environment: pypi
+    permissions:
+      id-token: write   # PyPI Trusted Publishing
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v6
+      - name: Resolve package and verify version matches tag
+        run: |
+          TAG="${GITHUB_REF_NAME}"
+          case "$TAG" in
+            atm-milano-mcp-v*) PKG=atm-milano-mcp; VER="${TAG#atm-milano-mcp-v}";;
+            atm-milano-v*)     PKG=atm-milano;     VER="${TAG#atm-milano-v}";;
+          esac
+          FILE=$(grep -l "^version = \"$VER\"" packages/$PKG/pyproject.toml) \
+            || { echo "pyproject version != tag $VER"; exit 1; }
+          echo "PKG=$PKG" >> "$GITHUB_ENV"
+      - run: make sync && make check
+      - run: uv build --package "$PKG"
+      - run: uv publish dist/*

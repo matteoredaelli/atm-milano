@@ -1,0 +1,18 @@
+[project]
+name = "atm-milano"
+version = "0.1.0"
+description = "Async Python client for ATM Milano (GiroMilano) journey planner, line, stop and metro data"
+readme = "README.md"
+license = "MIT"
+authors = [{ name = "Matteo Redaelli", email = "matteo.redaelli@gmail.com" }]
+requires-python = ">=3.14"
+keywords = ["atm", "milano", "transit", "public-transport", "gtfs"]
+classifiers = ["Programming Language :: Python :: 3.14", "Typing :: Typed"]
+dependencies = ["curl-cffi>=0.13", "pydantic>=2.10"]
+
+[project.urls]
+Repository = "https://github.com/matteoredaelli/atm-milano"
+
+[build-system]
+requires = ["uv_build>=0.9,<0.14"]
+build-backend = "uv_build"

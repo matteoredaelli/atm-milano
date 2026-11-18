@@ -1,0 +1,418 @@
+{
+ "FromDate": "2026-09-07T00:00:00",
+ "DescOrario": "Orario  in vigore dal 07/09/2026",
+ "StopCode": "12254",
+ "LineCode": "1",
+ "Direction": "0",
+ "TimeSchedules": [
+  {
+   "DayType": {
+    "DayTypeDescription": "Da Lunedì a Venerdì",
+    "Mon": true,
+    "Tue": true,
+    "Wed": true,
+    "Thu": true,
+    "Fri": true,
+    "Sat": false,
+    "Sun": false,
+    "Hol": false
+   },
+   "Schedule": [
+    {
+     "Hour": 3,
+     "ScheduleDetail": "",
+     "NightDetail": ""
+    },
+    {
+     "Hour": 4,
+     "ScheduleDetail": "",
+     "NightDetail": ""
+    },
+    {
+     "Hour": 5,
+     "ScheduleDetail": "32  44  54     ",
+     "NightDetail": ""
+    },
+    {
+     "Hour": 6,
+     "ScheduleDetail": "04  14  24  34  42* 50  58*    ",
+     "NightDetail": ""
+    },
+    {
+     "Hour": 7,
+     "ScheduleDetail": "Ogni 7'[7:14*:30*:45*]",
+     "NightDetail": ""
+    },
+    {
+     "Hour": 8,
+     "ScheduleDetail": "Ogni 8'[8:01*:18*:36*]",
+     "NightDetail": ""
+    },
+    {
+     "Hour": 9,
+     "ScheduleDetail": "Ogni 9'[9:40^]",
+     "NightDetail": ""
+    },
+    {
+     "Hour": 10,
+     "ScheduleDetail": "Ogni 10'   ",
+     "NightDetail": ""
+    },
+    {
+     "Hour": 11,
+     "ScheduleDetail": "Ogni 10'   ",
+     "NightDetail": ""
+    },
+    {
+     "Hour": 12,
+     "ScheduleDetail": "Ogni 10'   ",
+     "NightDetail": ""
+    },
+    {
+     "Hour": 13,
+     "ScheduleDetail": "Ogni 9'   ",
+     "NightDetail": ""
+    },
+    {
+     "Hour": 14,
+     "ScheduleDetail": "Ogni 10'   ",
+     "NightDetail": ""
+    },
+    {
+     "Hour": 15,
+     "ScheduleDetail": "Ogni 9'[15:50*]",
+     "NightDetail": ""
+    },
+    {
+     "Hour": 16,
+     "ScheduleDetail": "Ogni 10'[16:09*:29*:49*]",
+     "NightDetail": ""
+    },
+    {
+     "Hour": 17,
+     "ScheduleDetail": "Ogni 8'[17:08*:26*:43*:59*]",
+     "NightDetail": ""
+    },
+    {
+     "Hour": 18,
+     "ScheduleDetail": "Ogni 8'[18:16*]",
+     "NightDetail": ""
+    },
+    {
+     "Hour": 19,
+     "ScheduleDetail": "Ogni 10'[19:10^]",
+     "NightDetail": ""
+    },
+    {
+     "Hour": 20,
+     "ScheduleDetail": "Ogni 8'[20:04^:31^:49^]",
+     "NightDetail": ""
+    },
+    {
+     "Hour": 21,
+     "ScheduleDetail": "00  17  33  50  52^    ",
+     "NightDetail": ""
+    },
+    {
+     "Hour": 22,
+     "ScheduleDetail": "10  15^ 30  50     ",
+     "NightDetail": ""
+    },
+    {
+     "Hour": 23,
+     "ScheduleDetail": "10  30  52     ",
+     "NightDetail": ""
+    },
+    {
+     "Hour": 0,
+     "ScheduleDetail": "14  36  39^    ",
+     "NightDetail": ""
+    },
+    {
+     "Hour": 1,
+     "ScheduleDetail": "06  21^ 51^    ",
+     "NightDetail": ""
+    },
+    {
+     "Hour": 2,
+     "ScheduleDetail": "",
+     "NightDetail": ""
+    }
+   ]
+  },
+  {
+   "DayType": {
+    "DayTypeDescription": "Sabato",
+    "Mon": false,
+    "Tue": false,
+    "Wed": false,
+    "Thu": false,
+    "Fri": false,
+    "Sat": true,
+    "Sun": false,
+    "Hol": false
+   },
+   "Schedule": [
+    {
+     "Hour": 3,
+     "ScheduleDetail": "",
+     "NightDetail": ""
+    },
+    {
+     "Hour": 4,
+     "ScheduleDetail": "",
+     "NightDetail": ""
+    },
+    {
+     "Hour": 5,
+     "ScheduleDetail": "32  44  56     ",
+     "NightDetail": ""
+    },
+    {
+     "Hour": 6,
+     "ScheduleDetail": "08  20  32  44  56     ",
+     "NightDetail": ""
+    },
+    {
+     "Hour": 7,
+     "ScheduleDetail": "Ogni 10'   ",
+     "NightDetail": ""
+    },
+    {
+     "Hour": 8,
+     "ScheduleDetail": "Ogni 10'   ",
+     "NightDetail": ""
+    },
+    {
+     "Hour": 9,
+     "ScheduleDetail": "Ogni 10'   ",
+     "NightDetail": ""
+    },
+    {
+     "Hour": 10,
+     "ScheduleDetail": "Ogni 11'   ",
+     "NightDetail": ""
+    },
+    {
+     "Hour": 11,
+     "ScheduleDetail": "Ogni 11'   ",
+     "NightDetail": ""
+    },
+    {
+     "Hour": 12,
+     "ScheduleDetail": "Ogni 11'   ",
+     "NightDetail": ""
+    },
+    {
+     "Hour": 13,
+     "ScheduleDetail": "Ogni 11'   ",
+     "NightDetail": ""
+    },
+    {
+     "Hour": 14,
+     "ScheduleDetail": "Ogni 11'   ",
+     "NightDetail": ""
+    },
+    {
+     "Hour": 15,
+     "ScheduleDetail": "Ogni 11'   ",
+     "NightDetail": ""
+    },
+    {
+     "Hour": 16,
+     "ScheduleDetail": "Ogni 11'   ",
+     "NightDetail": ""
+    },
+    {
+     "Hour": 17,
+     "ScheduleDetail": "Ogni 11'   ",
+     "NightDetail": ""
+    },
+    {
+     "Hour": 18,
+     "ScheduleDetail": "Ogni 11'   ",
+     "NightDetail": ""
+    },
+    {
+     "Hour": 19,
+     "ScheduleDetail": "04  16  28  40  52     ",
+     "NightDetail": ""
+    },
+    {
+     "Hour": 20,
+     "ScheduleDetail": "05  19  19^ 33  47     ",
+     "NightDetail": ""
+    },
+    {
+     "Hour": 21,
+     "ScheduleDetail": "01  16  18^ 33  50     ",
+     "NightDetail": ""
+    },
+    {
+     "Hour": 22,
+     "ScheduleDetail": "10  13^ 30  50     ",
+     "NightDetail": ""
+    },
+    {
+     "Hour": 23,
+     "ScheduleDetail": "10  30  52     ",
+     "NightDetail": ""
+    },
+    {
+     "Hour": 0,
+     "ScheduleDetail": "14  36  41^    ",
+     "NightDetail": ""
+    },
+    {
+     "Hour": 1,
+     "ScheduleDetail": "06  23^ 53^    ",
+     "NightDetail": ""
+    },
+    {
+     "Hour": 2,
+     "ScheduleDetail": "",
+     "NightDetail": ""
+    }
+   ]
+  },
+  {
+   "DayType": {
+    "DayTypeDescription": "Festivo",
+    "Mon": false,
+    "Tue": false,
+    "Wed": false,
+    "Thu": false,
+    "Fri": false,
+    "Sat": false,
+    "Sun": true,
+    "Hol": true
+   },
+   "Schedule": [
+    {
+     "Hour": 3,
+     "ScheduleDetail": "",
+     "NightDetail": ""
+    },
+    {
+     "Hour": 4,
+     "ScheduleDetail": "",
+     "NightDetail": ""
+    },
+    {
+     "Hour": 5,
+     "ScheduleDetail": "32  50     ",
+     "NightDetail": ""
+    },
+    {
+     "Hour": 6,
+     "ScheduleDetail": "07  25  43     ",
+     "NightDetail": ""
+    },
+    {
+     "Hour": 7,
+     "ScheduleDetail": "01  19  37  55     ",
+     "NightDetail": ""
+    },
+    {
+     "Hour": 8,
+     "ScheduleDetail": "13  31  49     ",
+     "NightDetail": ""
+    },
+    {
+     "Hour": 9,
+     "ScheduleDetail": "06  24  41  59     ",
+     "NightDetail": ""
+    },
+    {
+     "Hour": 10,
+     "ScheduleDetail": "17  35  53     ",
+     "NightDetail": ""
+    },
+    {
+     "Hour": 11,
+     "ScheduleDetail": "11  29  47     ",
+     "NightDetail": ""
+    },
+    {
+     "Hour": 12,
+     "ScheduleDetail": "05  23  38  52     ",
+     "NightDetail": ""
+    },
+    {
+     "Hour": 13,
+     "ScheduleDetail": "07  21  36  51     ",
+     "NightDetail": ""
+    },
+    {
+     "Hour": 14,
+     "ScheduleDetail": "06  21  36  51     ",
+     "NightDetail": ""
+    },
+    {
+     "Hour": 15,
+     "ScheduleDetail": "06  21  36  51     ",
+     "NightDetail": ""
+    },
+    {
+     "Hour": 16,
+     "ScheduleDetail": "06  21  36  51     ",
+     "NightDetail": ""
+    },
+    {
+     "Hour": 17,
+     "ScheduleDetail": "06  21  36  51     ",
+     "NightDetail": ""
+    },
+    {
+     "Hour": 18,
+     "ScheduleDetail": "07  22  38  53     ",
+     "NightDetail": ""
+    },
+    {
+     "Hour": 19,
+     "ScheduleDetail": "09  24  40  55     ",
+     "NightDetail": ""
+    },
+    {
+     "Hour": 20,
+     "ScheduleDetail": "11  27  43     ",
+     "NightDetail": ""
+    },
+    {
+     "Hour": 21,
+     "ScheduleDetail": "00  16  33  50  51^    ",
+     "NightDetail": ""
+    },
+    {
+     "Hour": 22,
+     "ScheduleDetail": "10  30  50     ",
+     "NightDetail": ""
+    },
+    {
+     "Hour": 23,
+     "ScheduleDetail": "10  30  52     ",
+     "NightDetail": ""
+    },
+    {
+     "Hour": 0,
+     "ScheduleDetail": "14  36  39^    ",
+     "NightDetail": ""
+    },
+    {
+     "Hour": 1,
+     "ScheduleDetail": "06  20^ 50^    ",
+     "NightDetail": ""
+    },
+    {
+     "Hour": 2,
+     "ScheduleDetail": "",
+     "NightDetail": ""
+    }
+   ]
+  }
+ ],
+ "Notes": [
+  "* Corsa per CERTOSA FS",
+  "^ Limita a P.za Cincinnato"
+ ]
+}

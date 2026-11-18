@@ -1,0 +1,21 @@
+[project]
+name = "atm-milano-mcp"
+version = "0.1.0"
+description = "MCP server exposing ATM Milano journey planning, lines, stops and metro data"
+readme = "README.md"
+license = "MIT"
+authors = [{ name = "Matteo Redaelli", email = "matteo.redaelli@gmail.com" }]
+requires-python = ">=3.14"
+keywords = ["mcp", "atm", "milano", "transit"]
+classifiers = ["Programming Language :: Python :: 3.14"]
+dependencies = ["atm-milano>=0.1.0,<0.2", "fastmcp>=2.12"]
+
+[project.scripts]
+atm-milano-mcp = "atm_milano_mcp.server:main"
+
+[project.urls]
+Repository = "https://github.com/matteoredaelli/atm-milano"
+
+[build-system]
+requires = ["uv_build>=0.9,<0.14"]
+build-backend = "uv_build"

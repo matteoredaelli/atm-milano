@@ -1,0 +1,14 @@
+# atm-milano
+
+Unofficial Python tools for Milan public transport (ATM / GiroMilano).
+
+- [`atm-milano`](packages/atm-milano): async client with pydantic models
+- [`atm-milano-mcp`](packages/atm-milano-mcp): FastMCP server built on it
+
+```json
+{ "mcpServers": { "atm-milano": { "command": "uvx", "args": ["atm-milano-mcp"] } } }
+```
+
+Dev: `make sync`, `make check`, `make build`. Release: tag `atm-milano-vX.Y.Z` / `atm-milano-mcp-vX.Y.Z`.
+
+Not affiliated with ATM; uses undocumented endpoints that may change.

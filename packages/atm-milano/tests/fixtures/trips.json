@@ -1,0 +1,785 @@
+{
+ "Trips": [
+  {
+   "TripId": "6c60637e-c167-47e5-97611f5930e1f84c-6afd5645",
+   "TripNumber": 1,
+   "TotalLength": 6116,
+   "TotalDuration": 26,
+   "WalkingLength": 405,
+   "Actions": [
+    {
+     "ActionOrder": 1,
+     "ActionDescription": "Departure from Cadorna",
+     "Place": {
+      "OperatorCode": "",
+      "Code": "",
+      "Description": "Cadorna",
+      "Location": {
+       "X": 9.175896520063437,
+       "Y": 45.46805892680871
+      },
+      "PointType": 0,
+      "OtherLines": [],
+      "StopType": null,
+      "Links": []
+     },
+     "Leg": null,
+     "ActionType": 0,
+     "TransportMode": null,
+     "FromPointAccessible": null,
+     "ToPointAccessible": null,
+     "FromPointStopPath": null,
+     "ToPointStopPath": null,
+     "FromPointStopStatus": null,
+     "ToPointStopStatus": null,
+     "FromPointStopInfo": null,
+     "ToPointStopInfo": null,
+     "FromPointStopInterchangePath": null,
+     "ToPointStopInterchangePath": null
+    },
+    {
+     "ActionOrder": 2,
+     "ActionDescription": "Walk 50 meters",
+     "Place": null,
+     "Leg": {
+      "LegOrder": 1,
+      "Length": 50,
+      "TravelMode": 0,
+      "Journeys": null
+     },
+     "ActionType": 1,
+     "TransportMode": null,
+     "FromPointAccessible": null,
+     "ToPointAccessible": null,
+     "FromPointStopPath": null,
+     "ToPointStopPath": null,
+     "FromPointStopStatus": null,
+     "ToPointStopStatus": null,
+     "FromPointStopInfo": null,
+     "ToPointStopInfo": null,
+     "FromPointStopInterchangePath": null,
+     "ToPointStopInterchangePath": null
+    },
+    {
+     "ActionOrder": 3,
+     "ActionDescription": "Go to stop CADORNA FN M1",
+     "Place": {
+      "OperatorCode": "AZ_ATM-MI",
+      "Code": "-51",
+      "Description": "CADORNA FN M1",
+      "Location": {
+       "X": 9.17593475729466,
+       "Y": 45.46801386198732
+      },
+      "PointType": 1,
+      "OtherLines": [],
+      "StopType": null,
+      "Links": [
+       {
+        "Rel": "poi",
+        "Href": "geodata/pois/stops/-51",
+        "Title": null
+       },
+       {
+        "Rel": "linesummary",
+        "Href": "tpl/stops/-51/linesummary",
+        "Title": null
+       }
+      ]
+     },
+     "Leg": null,
+     "ActionType": 4,
+     "TransportMode": 0,
+     "FromPointAccessible": null,
+     "ToPointAccessible": null,
+     "FromPointStopPath": null,
+     "ToPointStopPath": null,
+     "FromPointStopStatus": null,
+     "ToPointStopStatus": null,
+     "FromPointStopInfo": null,
+     "ToPointStopInfo": null,
+     "FromPointStopInterchangePath": null,
+     "ToPointStopInterchangePath": null
+    },
+    {
+     "ActionOrder": 4,
+     "ActionDescription": "Take the line M1 (BISCEGLIE - SESTO F.S) or (RHO FIERA - SESTO F.S) for 10 stops",
+     "Place": null,
+     "Leg": {
+      "LegOrder": 2,
+      "Length": 5750,
+      "TravelMode": 1,
+      "Journeys": [
+       {
+        "OperatorCode": "AZ_ATM-MI",
+        "JourneyCode": "-2",
+        "Destination": null,
+        "JourneyPattern": {
+         "Id": "M1|1",
+         "Code": "M1",
+         "Direction": "1",
+         "Line": {
+          "OperatorCode": "AZ_ATM-MI",
+          "LineCode": "M1",
+          "LineDescription": "BISCEGLIE - SESTO F.S",
+          "Suburban": false,
+          "TransportMode": 0,
+          "OtherRoutesAvailable": false,
+          "Links": []
+         },
+         "Stops": null,
+         "Geometry": null,
+         "Links": []
+        },
+        "Frequence": 7,
+        "OnBoardStops": 10
+       },
+       {
+        "OperatorCode": "AZ_ATM-MI",
+        "JourneyCode": "-144",
+        "Destination": null,
+        "JourneyPattern": {
+         "Id": "M1|1",
+         "Code": "M1",
+         "Direction": "1",
+         "Line": {
+          "OperatorCode": "AZ_ATM-MI",
+          "LineCode": "M1",
+          "LineDescription": "RHO FIERA - SESTO F.S",
+          "Suburban": false,
+          "TransportMode": 0,
+          "OtherRoutesAvailable": false,
+          "Links": []
+         },
+         "Stops": null,
+         "Geometry": null,
+         "Links": []
+        },
+        "Frequence": 7,
+        "OnBoardStops": 10
+       }
+      ]
+     },
+     "ActionType": 2,
+     "TransportMode": 0,
+     "FromPointAccessible": false,
+     "ToPointAccessible": true,
+     "FromPointStopPath": {
+      "stopCode": 528,
+      "direction": [
+       {
+        "value": 1,
+        "routes": [
+         {
+          "routeId": 56,
+          "routeStatus": false,
+          "steps": [
+           {
+            "equipmentId": 32,
+            "equipmentTypeId": 1,
+            "equipmentTypeName": "Ascensore",
+            "equipmentName": "Ascensore ME 164",
+            "equipmentLocation": "Piazza Cadorna, davanti alla stazione ",
+            "progressive": 1,
+            "levelId": 1,
+            "levelName": "Piano della strada (esterno)",
+            "equipmentStatus": true,
+            "equipmentStatusString": "In servizio"
+           },
+           {
+            "equipmentId": 31,
+            "equipmentTypeId": 1,
+            "equipmentTypeName": "Ascensore",
+            "equipmentName": "Ascensore DM 163",
+            "equipmentLocation": null,
+            "progressive": 2,
+            "levelId": 4,
+            "levelName": "Piano dei tornelli (mezzanino)",
+            "equipmentStatus": false,
+            "equipmentStatusString": "Fuori Servizio"
+           }
+          ]
+         }
+        ],
+        "stepsL1": [
+         [
+          {
+           "equipmentId": 32,
+           "equipmentTypeId": 1,
+           "equipmentTypeName": "Ascensore",
+           "equipmentName": "Ascensore ME 164",
+           "equipmentLocation": "Piazza Cadorna, davanti alla stazione ",
+           "progressive": 1,
+           "levelId": 1,
+           "levelName": "Piano della strada (esterno)",
+           "equipmentStatus": true,
+           "equipmentStatusString": "In servizio"
+          }
+         ]
+        ],
+        "stepsL2": [
+         [
+          {
+           "equipmentId": 31,
+           "equipmentTypeId": 1,
+           "equipmentTypeName": "Ascensore",
+           "equipmentName": "Ascensore DM 163",
+           "equipmentLocation": null,
+           "progressive": 2,
+           "levelId": 4,
+           "levelName": "Piano dei tornelli (mezzanino)",
+           "equipmentStatus": false,
+           "equipmentStatusString": "Fuori Servizio"
+          }
+         ]
+        ],
+        "stepsL3": [],
+        "stepsL4": [],
+        "stepsL5": [],
+        "equipmentsKO": true,
+        "banchinaKO": true,
+        "NOequipments": false
+       }
+      ]
+     },
+     "ToPointStopPath": {
+      "stopCode": 540,
+      "direction": [
+       {
+        "value": 1,
+        "routes": [
+         {
+          "routeId": 254,
+          "routeStatus": true,
+          "steps": [
+           {
+            "equipmentId": 270,
+            "equipmentTypeId": 2,
+            "equipmentTypeName": "Montascale",
+            "equipmentName": "Montascale MI 4",
+            "equipmentLocation": "V.le Monza, civico 82",
+            "progressive": 1,
+            "levelId": 1,
+            "levelName": "Piano della strada (esterno)",
+            "equipmentStatus": true,
+            "equipmentStatusString": "In servizio"
+           },
+           {
+            "equipmentId": 272,
+            "equipmentTypeId": 2,
+            "equipmentTypeName": "Montascale",
+            "equipmentName": "Montascale MI 2",
+            "equipmentLocation": null,
+            "progressive": 2,
+            "levelId": 4,
+            "levelName": "Piano dei tornelli (mezzanino)",
+            "equipmentStatus": true,
+            "equipmentStatusString": "In servizio"
+           }
+          ]
+         }
+        ],
+        "stepsL1": [
+         [
+          {
+           "equipmentId": 270,
+           "equipmentTypeId": 2,
+           "equipmentTypeName": "Montascale",
+           "equipmentName": "Montascale MI 4",
+           "equipmentLocation": "V.le Monza, civico 82",
+           "progressive": 1,
+           "levelId": 1,
+           "levelName": "Piano della strada (esterno)",
+           "equipmentStatus": true,
+           "equipmentStatusString": "In servizio"
+          }
+         ]
+        ],
+        "stepsL2": [
+         [
+          {
+           "equipmentId": 272,
+           "equipmentTypeId": 2,
+           "equipmentTypeName": "Montascale",
+           "equipmentName": "Montascale MI 2",
+           "equipmentLocation": null,
+           "progressive": 2,
+           "levelId": 4,
+           "levelName": "Piano dei tornelli (mezzanino)",
+           "equipmentStatus": true,
+           "equipmentStatusString": "In servizio"
+          }
+         ]
+        ],
+        "stepsL3": [],
+        "stepsL4": [],
+        "stepsL5": [],
+        "equipmentsKO": false,
+        "banchinaKO": false,
+        "NOequipments": false
+       }
+      ]
+     },
+     "FromPointStopStatus": {
+      "stopCode": 528,
+      "stopName": "Cadorna Fn Triennale",
+      "status": 1,
+      "direction": [
+       {
+        "value": 1,
+        "status": false
+       }
+      ]
+     },
+     "ToPointStopStatus": {
+      "stopCode": 540,
+      "stopName": "Rovereto",
+      "status": 2,
+      "direction": [
+       {
+        "value": 1,
+        "status": true
+       }
+      ]
+     },
+     "FromPointStopInfo": {
+      "stopCode": 528,
+      "stopName": "Cadorna Fn Triennale",
+      "direction": [
+       {
+        "value": 1,
+        "destination": "Direzione Sesto 1° Maggio Fs"
+       }
+      ]
+     },
+     "ToPointStopInfo": {
+      "stopCode": 540,
+      "stopName": "Rovereto",
+      "direction": [
+       {
+        "value": 1,
+        "destination": "Direzione Sesto 1° Maggio Fs"
+       }
+      ]
+     },
+     "FromPointStopInterchangePath": null,
+     "ToPointStopInterchangePath": null
+    },
+    {
+     "ActionOrder": 5,
+     "ActionDescription": "get off at stop ROVERETO M1",
+     "Place": {
+      "OperatorCode": "AZ_ATM-MI",
+      "Code": "-59",
+      "Description": "ROVERETO M1",
+      "Location": {
+       "X": 9.219639789431568,
+       "Y": 45.49589580542811
+      },
+      "PointType": 1,
+      "OtherLines": [],
+      "StopType": null,
+      "Links": [
+       {
+        "Rel": "poi",
+        "Href": "geodata/pois/stops/-59",
+        "Title": null
+       },
+       {
+        "Rel": "linesummary",
+        "Href": "tpl/stops/-59/linesummary",
+        "Title": null
+       }
+      ]
+     },
+     "Leg": null,
+     "ActionType": 5,
+     "TransportMode": 0,
+     "FromPointAccessible": null,
+     "ToPointAccessible": null,
+     "FromPointStopPath": null,
+     "ToPointStopPath": null,
+     "FromPointStopStatus": null,
+     "ToPointStopStatus": null,
+     "FromPointStopInfo": null,
+     "ToPointStopInfo": null,
+     "FromPointStopInterchangePath": null,
+     "ToPointStopInterchangePath": null
+    },
+    {
+     "ActionOrder": 6,
+     "ActionDescription": "Walk 360 meters",
+     "Place": null,
+     "Leg": {
+      "LegOrder": 3,
+      "Length": 360,
+      "TravelMode": 0,
+      "Journeys": null
+     },
+     "ActionType": 1,
+     "TransportMode": null,
+     "FromPointAccessible": null,
+     "ToPointAccessible": null,
+     "FromPointStopPath": null,
+     "ToPointStopPath": null,
+     "FromPointStopStatus": null,
+     "ToPointStopStatus": null,
+     "FromPointStopInfo": null,
+     "ToPointStopInfo": null,
+     "FromPointStopInterchangePath": null,
+     "ToPointStopInterchangePath": null
+    },
+    {
+     "ActionOrder": 7,
+     "ActionDescription": "to Greco",
+     "Place": {
+      "OperatorCode": "",
+      "Code": "",
+      "Description": "Greco",
+      "Location": {
+       "X": 9.21593704814513,
+       "Y": 45.49487673458561
+      },
+      "PointType": 0,
+      "OtherLines": [],
+      "StopType": null,
+      "Links": []
+     },
+     "Leg": null,
+     "ActionType": 3,
+     "TransportMode": null,
+     "FromPointAccessible": null,
+     "ToPointAccessible": null,
+     "FromPointStopPath": null,
+     "ToPointStopPath": null,
+     "FromPointStopStatus": null,
+     "ToPointStopStatus": null,
+     "FromPointStopInfo": null,
+     "ToPointStopInfo": null,
+     "FromPointStopInterchangePath": null,
+     "ToPointStopInterchangePath": null
+    }
+   ],
+   "JPsWithTrafficInfos": [],
+   "Tariff": {
+    "Others": [
+     {
+      "TariffId": "2301",
+      "Description": "Ordinary Ticket Mi1-Mi3",
+      "Price": 2.2,
+      "Url": "https://nuovosistematariffario.atm.it/en/app.html?t=mi1-mi3",
+      "Type": "0",
+      "DescriptionZone": "Mi1-Mi3"
+     }
+    ],
+    "TariffId": "2301",
+    "Description": "Ordinary Ticket Mi1-Mi3",
+    "Price": 2.2,
+    "Url": "https://nuovosistematariffario.atm.it/en/app.html?t=urbano",
+    "Type": "0",
+    "DescriptionZone": "Urbano"
+   },
+   "InfoMessage": "",
+   "RadiobusGeometry": null,
+   "Location": null,
+   "Links": [
+    {
+     "Rel": "self",
+     "Href": "tpl/trips/6c60637e-c167-47e5-97611f5930e1f84c-6afd5645",
+     "Title": null
+    },
+    {
+     "Rel": "geom",
+     "Href": "tpl/trips/6c60637e-c167-47e5-97611f5930e1f84c-6afd5645/Geometry",
+     "Title": null
+    }
+   ]
+  },
+  {
+   "TripId": "44515069-6f8d-4f49-b5f53be986228892-6afd5647",
+   "TripNumber": 1,
+   "TotalLength": 5883,
+   "TotalDuration": 36,
+   "WalkingLength": 92,
+   "Actions": [
+    {
+     "ActionOrder": 1,
+     "ActionDescription": "Departure from Cadorna",
+     "Place": {
+      "OperatorCode": "",
+      "Code": "",
+      "Description": "Cadorna",
+      "Location": {
+       "X": 9.175896520063437,
+       "Y": 45.46805892680871
+      },
+      "PointType": 0,
+      "OtherLines": [],
+      "StopType": null,
+      "Links": []
+     },
+     "Leg": null,
+     "ActionType": 0,
+     "TransportMode": null,
+     "FromPointAccessible": null,
+     "ToPointAccessible": null,
+     "FromPointStopPath": null,
+     "ToPointStopPath": null,
+     "FromPointStopStatus": null,
+     "ToPointStopStatus": null,
+     "FromPointStopInfo": null,
+     "ToPointStopInfo": null,
+     "FromPointStopInterchangePath": null,
+     "ToPointStopInterchangePath": null
+    },
+    {
+     "ActionOrder": 2,
+     "ActionDescription": "Walk 50 meters",
+     "Place": null,
+     "Leg": {
+      "LegOrder": 1,
+      "Length": 50,
+      "TravelMode": 0,
+      "Journeys": null
+     },
+     "ActionType": 1,
+     "TransportMode": null,
+     "FromPointAccessible": null,
+     "ToPointAccessible": null,
+     "FromPointStopPath": null,
+     "ToPointStopPath": null,
+     "FromPointStopStatus": null,
+     "ToPointStopStatus": null,
+     "FromPointStopInfo": null,
+     "ToPointStopInfo": null,
+     "FromPointStopInterchangePath": null,
+     "ToPointStopInterchangePath": null
+    },
+    {
+     "ActionOrder": 3,
+     "ActionDescription": "Go to stop Cadorna M1 M2",
+     "Place": {
+      "OperatorCode": "AZ_ATM-MI",
+      "Code": "11270",
+      "Description": "Cadorna M1 M2",
+      "Location": {
+       "X": 9.17622895451819,
+       "Y": 45.46800440729637
+      },
+      "PointType": 1,
+      "OtherLines": [],
+      "StopType": null,
+      "Links": [
+       {
+        "Rel": "poi",
+        "Href": "geodata/pois/stops/11270",
+        "Title": null
+       },
+       {
+        "Rel": "linesummary",
+        "Href": "tpl/stops/11270/linesummary",
+        "Title": null
+       }
+      ]
+     },
+     "Leg": null,
+     "ActionType": 4,
+     "TransportMode": 1,
+     "FromPointAccessible": null,
+     "ToPointAccessible": null,
+     "FromPointStopPath": null,
+     "ToPointStopPath": null,
+     "FromPointStopStatus": null,
+     "ToPointStopStatus": null,
+     "FromPointStopInfo": null,
+     "ToPointStopInfo": null,
+     "FromPointStopInterchangePath": null,
+     "ToPointStopInterchangePath": null
+    },
+    {
+     "ActionOrder": 4,
+     "ActionDescription": "Take the line 1 (Roserio - Greco) for 22 stops",
+     "Place": null,
+     "Leg": {
+      "LegOrder": 2,
+      "Length": 5810,
+      "TravelMode": 1,
+      "Journeys": [
+       {
+        "OperatorCode": "AZ_ATM-MI",
+        "JourneyCode": "12560",
+        "Destination": null,
+        "JourneyPattern": {
+         "Id": "1|1",
+         "Code": "1",
+         "Direction": "1",
+         "Line": {
+          "OperatorCode": "AZ_ATM-MI",
+          "LineCode": "1",
+          "LineDescription": "Roserio - Greco",
+          "Suburban": false,
+          "TransportMode": 1,
+          "OtherRoutesAvailable": false,
+          "Links": []
+         },
+         "Stops": null,
+         "Geometry": null,
+         "Links": []
+        },
+        "Frequence": 10,
+        "OnBoardStops": 22
+       }
+      ]
+     },
+     "ActionType": 2,
+     "TransportMode": 1,
+     "FromPointAccessible": null,
+     "ToPointAccessible": null,
+     "FromPointStopPath": null,
+     "ToPointStopPath": null,
+     "FromPointStopStatus": null,
+     "ToPointStopStatus": null,
+     "FromPointStopInfo": null,
+     "ToPointStopInfo": null,
+     "FromPointStopInterchangePath": null,
+     "ToPointStopInterchangePath": null
+    },
+    {
+     "ActionOrder": 5,
+     "ActionDescription": "get off at stop Greco Rovereto",
+     "Place": {
+      "OperatorCode": "AZ_ATM-MI",
+      "Code": "12254",
+      "Description": "Greco Rovereto",
+      "Location": {
+       "X": 9.216219268583316,
+       "Y": 45.49504722248345
+      },
+      "PointType": 1,
+      "OtherLines": [],
+      "StopType": null,
+      "Links": [
+       {
+        "Rel": "poi",
+        "Href": "geodata/pois/stops/12254",
+        "Title": null
+       },
+       {
+        "Rel": "linesummary",
+        "Href": "tpl/stops/12254/linesummary",
+        "Title": null
+       }
+      ]
+     },
+     "Leg": null,
+     "ActionType": 5,
+     "TransportMode": 1,
+     "FromPointAccessible": null,
+     "ToPointAccessible": null,
+     "FromPointStopPath": null,
+     "ToPointStopPath": null,
+     "FromPointStopStatus": null,
+     "ToPointStopStatus": null,
+     "FromPointStopInfo": null,
+     "ToPointStopInfo": null,
+     "FromPointStopInterchangePath": null,
+     "ToPointStopInterchangePath": null
+    },
+    {
+     "ActionOrder": 6,
+     "ActionDescription": "Walk 40 meters",
+     "Place": null,
+     "Leg": {
+      "LegOrder": 3,
+      "Length": 40,
+      "TravelMode": 0,
+      "Journeys": null
+     },
+     "ActionType": 1,
+     "TransportMode": null,
+     "FromPointAccessible": null,
+     "ToPointAccessible": null,
+     "FromPointStopPath": null,
+     "ToPointStopPath": null,
+     "FromPointStopStatus": null,
+     "ToPointStopStatus": null,
+     "FromPointStopInfo": null,
+     "ToPointStopInfo": null,
+     "FromPointStopInterchangePath": null,
+     "ToPointStopInterchangePath": null
+    },
+    {
+     "ActionOrder": 7,
+     "ActionDescription": "to Greco",
+     "Place": {
+      "OperatorCode": "",
+      "Code": "",
+      "Description": "Greco",
+      "Location": {
+       "X": 9.21593704814513,
+       "Y": 45.49487673458561
+      },
+      "PointType": 0,
+      "OtherLines": [],
+      "StopType": null,
+      "Links": []
+     },
+     "Leg": null,
+     "ActionType": 3,
+     "TransportMode": null,
+     "FromPointAccessible": null,
+     "ToPointAccessible": null,
+     "FromPointStopPath": null,
+     "ToPointStopPath": null,
+     "FromPointStopStatus": null,
+     "ToPointStopStatus": null,
+     "FromPointStopInfo": null,
+     "ToPointStopInfo": null,
+     "FromPointStopInterchangePath": null,
+     "ToPointStopInterchangePath": null
+    }
+   ],
+   "JPsWithTrafficInfos": [],
+   "Tariff": {
+    "Others": [
+     {
+      "TariffId": "2301",
+      "Description": "Ordinary Ticket Mi1-Mi3",
+      "Price": 2.2,
+      "Url": "https://nuovosistematariffario.atm.it/en/app.html?t=mi1-mi3",
+      "Type": "0",
+      "DescriptionZone": "Mi1-Mi3"
+     }
+    ],
+    "TariffId": "2301",
+    "Description": "Ordinary Ticket Mi1-Mi3",
+    "Price": 2.2,
+    "Url": "https://nuovosistematariffario.atm.it/en/app.html?t=urbano",
+    "Type": "0",
+    "DescriptionZone": "Urbano"
+   },
+   "InfoMessage": "",
+   "RadiobusGeometry": null,
+   "Location": null,
+   "Links": [
+    {
+     "Rel": "self",
+     "Href": "tpl/trips/44515069-6f8d-4f49-b5f53be986228892-6afd5647",
+     "Title": null
+    },
+    {
+     "Rel": "geom",
+     "Href": "tpl/trips/44515069-6f8d-4f49-b5f53be986228892-6afd5647/Geometry",
+     "Title": null
+    }
+   ]
+  }
+ ],
+ "Links": [
+  {
+   "Rel": "self",
+   "Href": "tpl/trips/?FromPoint.X=9.175935&FromPoint.Y=45.468014&ToPoint.X=9.2162&ToPoint.Y=45.495&Date=2026-11-18&FromSeconds=36000&TransportModes=Metro,Bus,Tram,Rail&Lang=en&FromDescription=Cadorna&ToDescription=Greco",
+   "Title": null
+  }
+ ]
+}

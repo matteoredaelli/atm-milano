@@ -1,0 +1,59 @@
+{
+ "displayFieldName": "nome",
+ "fieldAliases": {
+  "linee": "linee",
+  "nome": "nome"
+ },
+ "geometryType": "esriGeometryPoint",
+ "spatialReference": {
+  "wkid": 4326,
+  "latestWkid": 4326
+ },
+ "fields": [
+  {
+   "name": "linee",
+   "type": "esriFieldTypeString",
+   "alias": "linee",
+   "length": 100
+  },
+  {
+   "name": "nome",
+   "type": "esriFieldTypeString",
+   "alias": "nome",
+   "length": 100
+  }
+ ],
+ "features": [
+  {
+   "attributes": {
+    "linee": "4",
+    "nome": "BOLIVAR"
+   },
+   "geometry": {
+    "x": 9.153149008193896,
+    "y": 45.45531900075381
+   }
+  },
+  {
+   "attributes": {
+    "linee": "4",
+    "nome": "CALIFORNIA"
+   },
+   "geometry": {
+    "x": 9.160062008127625,
+    "y": 45.457548001212174
+   }
+  },
+  {
+   "attributes": {
+    "linee": "4",
+    "nome": "SEGNERI"
+   },
+   "geometry": {
+    "x": 9.130565008236134,
+    "y": 45.44653500067452
+   }
+  }
+ ],
+ "exceededTransferLimit": true
+}
